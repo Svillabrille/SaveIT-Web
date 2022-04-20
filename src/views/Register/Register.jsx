@@ -9,7 +9,7 @@ const Register = () => {
     
     return (
         <div className="center">
-            <h1>Register</h1>
+            <h1 className="Titles">Register</h1>
             <form onSubmit={handleSubmit(handleRegistration)} >
 {/*             <div className="txt_field">
                 <label>Name</label>

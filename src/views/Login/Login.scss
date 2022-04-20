@@ -13,11 +13,19 @@
     margin-bottom: 50px;
   }
   .center_login h1{
-    text-align: center_login;
+    text-align: center;
     padding: 20px 0;
     border-bottom: 1px solid silver;
     color: $primary-color;
   }
+
+  .Titles {
+    font-size: 25px;
+    letter-spacing: 6px;
+    opacity: 0.9;
+    font-weight: 300;
+  }
+
   .center_login form{
     padding: 0 40px;
     box-sizing: border-box;

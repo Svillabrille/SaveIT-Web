@@ -25,16 +25,16 @@ const About = () => {
 
                 <ul class = "icons">
                     <li>
-                        <i class = "fa fa-twitter"></i>
+                        <a href="https://www.facebook.com/login/?lang=en" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook SocialMedia"></i></a>
                     </li>
                     <li>
-                        <i class = "fa fa-facebook"></i>
+                        <a href="https://www.instagram.com/?hl=en" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram SocialMedia"></i></a>                    
                     </li>
                     <li>
-                        <i class = "fa fa-github"></i>
+                        <a href="https://twitter.com/login/?lang=en" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter SocialMedia"></i></a>
                     </li>
                     <li>
-                        <i class = "fa fa-pinterest"></i>
+                        <a href="https://www.linkedin.com/login" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin-in SocialMedia"></i></a>                    
                     </li>
                 </ul>
             </div>

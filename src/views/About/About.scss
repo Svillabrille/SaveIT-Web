@@ -15,7 +15,7 @@ section{
 }
 
 .content{
-    padding-top: 20px;
+    padding-top: 25px;
     background: $white;
     display: flex;
     flex-direction: column;
@@ -26,6 +26,7 @@ section{
     font-size: 36px;
     letter-spacing: 6px;
     opacity: 0.9;
+    font-weight: 300;
 }
 .content span{
     height: 0.5px;
@@ -73,6 +74,9 @@ section{
 .icons{
     display: flex;
     padding: 15px 0;
+    text-decoration: none;
+    cursor: auto;
+
 }
 .icons li{
     display: block;
@@ -84,7 +88,11 @@ section{
     opacity: 0.8;
 }
 .icons li i:hover{
-    color: #06d6a0;
+    color: $secondary-color;
+}
+
+.SocialMedia {
+    color: $primary-color;
 }
 
 

@@ -9,7 +9,7 @@ const Login = () => {
     
     return (
         <div className="center_login">
-            <h1>Login</h1>
+            <h1 className="Titles">Login</h1>
             <form onSubmit={handleSubmit(handleRegistration)} >
 {/*             <div class="txt_field_login">
                 <label>Name</label>
