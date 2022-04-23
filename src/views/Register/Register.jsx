@@ -1,29 +1,60 @@
+import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import React from "react";
 import { useForm } from "react-hook-form";
+import { yupResolver } from '@hookform/resolvers/yup';
+import * as yup from "yup";
+import { register as registerRequest } from '../../services/AuthService'
+
 
 import './Register.scss'
 
+const schema = yup.object({
+    email: yup.string().email().required(),
+    name: yup.string().required(),
+    password: yup.string().min(8, 'Password must contain at least 8 characters').required()
+  }).required();
+
 const Register = () => {
-    const { register, handleSubmit } = useForm();
-    const handleRegistration = (data) => console.log(data);
-    
+    const [backErrors, setBackErrors] = useState({})
+    const [isSubmitting, setIsSubmitting] = useState(false)
+    const navigate = useNavigate()
+    const { register, handleSubmit, formState:{ errors } } = useForm({
+      resolver: yupResolver(schema)
+    });
+
+    console.log(errors);
+  
+    const onSubmit = data => {
+      setBackErrors({})
+      setIsSubmitting(true)
+  
+      registerRequest(data)
+        .then((user) => {
+          navigate('/login')
+        })
+        .catch(err => {
+          setBackErrors(err?.response?.data?.errors)
+        })
+        .finally(() => {
+          setIsSubmitting(false)
+        })
+    };    
     return (
         <div className="center">
             <h1 className="Titles">Register</h1>
-            <form onSubmit={handleSubmit(handleRegistration)} >
-{/*             <div className="txt_field">
-                <label>Name</label>
-                <input name="name" {...register('name')} />
-            </div> */}
+            <form onSubmit={handleSubmit(onSubmit)}>
+             <div className="txt_field">
+                <input placeholder='Name'name="name" {...register('name')} />
+            </div> 
                 <div className="txt_field">
-                    <label>Email</label>
                     <span></span>
-                    <input type="email" name="email" {...register('email')} />
+                    <input placeholder='Email' type="email" name="email" {...register('email')} />
+                    {errors.email && <small>{errors.email?.message}</small>}
                 </div>
                 <div className="txt_field">
-                    <label>Password</label>
-                    <span></span>
-                    <input type="password" name="password" {...register('password')} />
+                    <span></span> 
+                    <input placeholder='Password' type="password" name="password" {...register('password')} />
                 </div>
                 <button className="Submit">Submit</button>
             </form>

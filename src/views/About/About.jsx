@@ -5,25 +5,25 @@ const About = () => {
     return (
         <div>
         <section>
-            <div class = "content">
+            <div className = "content">
                 <h2>About Us</h2>
                 <span></span>
 
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis aspernatur voluptas inventore ab voluptates nostrum minus illo laborum harum laudantium earum ut, temporibus fugiat sequi explicabo facilis unde quos corporis!</p>
 
-                <ul class = "links">
+                <ul className = "links">
                     <li><a href = "#">work</a></li>
 
-                    <div class = "vertical-line"></div>
+                    <div className = "vertical-line"></div>
 
                     <li><a href = "#">service</a></li>
 
-                    <div class = "vertical-line"></div>
+                    <div className = "vertical-line"></div>
                     
                     <li><a href = "#">contact</a></li>
                 </ul>
 
-                <ul class = "icons">
+                <ul className = "icons">
                     <li>
                         <a href="https://www.facebook.com/login/?lang=en" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook SocialMedia"></i></a>
                     </li>
