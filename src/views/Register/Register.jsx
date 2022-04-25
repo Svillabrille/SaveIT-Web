@@ -56,6 +56,10 @@ const Register = () => {
                     <span></span> 
                     <input placeholder='Password' type="password" name="password" {...register('password')} />
                 </div>
+                <div className="txt_field">
+                    <span></span> 
+                    <input placeholder='Country' type="text" name="country" {...register('country')} />
+                </div>
                 <button className="Submit">Submit</button>
             </form>
         </div>

@@ -1,11 +1,13 @@
 import React, { useState } from "react";
-import "./Navbar.scss";
-
-
 import { NavLink } from "react-router-dom";
+import { useAuthContext } from "../../contexts/AuthContext";
+import { logout } from '../../store/AccessTokenStore'
+import "./Navbar.scss";
 
 const Navbar = () => {
   const [showMediaIcons, setShowMediaIcons] = useState(false);
+  const { user } = useAuthContext();
+
 
   return (
     <>
@@ -23,18 +25,39 @@ const Navbar = () => {
             showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"
           }>
           <ul>
+
             <li>
               <NavLink to="/" onClick={() => setShowMediaIcons(false)}>Home</NavLink>
             </li>
             <li>
               <NavLink to="/about" onClick={() => setShowMediaIcons(false)}>About</NavLink>
             </li>
-            <li>
-              <NavLink to="/register" onClick={() => setShowMediaIcons(false)}>Register</NavLink>
-            </li>
-            <li>
-              <NavLink to="/login" onClick={() => setShowMediaIcons(false)}>Login</NavLink>
-            </li>
+          {!user ? 
+            
+                (
+                    <>
+                        <li>
+                            <NavLink to="/register" onClick={() => setShowMediaIcons(false)}>Register</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/login" onClick={() => setShowMediaIcons(false)}>Login</NavLink>
+                        </li>
+                    </>
+                    
+                ) : (
+                    <>
+                        <li>
+                            <NavLink to="/profile" onClick={() => setShowMediaIcons(false)}>Profile</NavLink>
+                        </li>
+                        <li>
+                            <p className="logout" onClick={logout}>Logout</p>
+                        {/* <NavLink to="/logout" onClick={() => setShowMediaIcons(false)}>Login</NavLink> */}
+                        </li>
+                    </>
+                )
+
+
+          }
           </ul>
         </div>
 
@@ -42,9 +65,7 @@ const Navbar = () => {
         <div className="social-media">
           {/* hamburget menu start  */}
           <div className="hamburger-menu">
-            <a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
-            <i className="fas fa-bars"></i>
-            </a>
+            <i className="fas fa-bars" onClick={() => setShowMediaIcons(!showMediaIcons)}></i>
           </div>
         </div>
       </nav>

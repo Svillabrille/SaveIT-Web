@@ -10,6 +10,9 @@ const Footer = () => {
           <h1>
             <img src="https://i.postimg.cc/y62wcLBq/logo.png" alt="" />
           </h1>
+          <div>
+            
+          </div>
         </div>
         <ul className="r-footer">
           <li>

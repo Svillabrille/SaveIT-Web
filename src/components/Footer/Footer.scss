@@ -4,14 +4,9 @@
 *, *:before, *:after {
     box-sizing: border-box;
     }
-    
-    body {
-    font-family: 'Jost';
-    margin: 0;
-    display: grid;
-    font-size: 14px;
 
-    }
+
+    
     header p {
     padding: 10px;
     text-align: center;
@@ -27,7 +22,6 @@
     color: #fff;
     background-color: $primary-color;
     font-family: "Jost", sans-serif;
-
     }
     
     .footer > * {
