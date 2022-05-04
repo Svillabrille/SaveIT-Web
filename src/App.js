@@ -6,8 +6,11 @@ import Login from './views/Login/Login';
 import Register from './views/Register/Register';
 import Home from './views/Home/Home';
 import About from './views/About/About';
+import NewTicket from './views/NewTicket/NewTicket';
 import Profile from './views/Profile/Profile';
 import ProtectedRoute from './guards/ProtectedRoute';
+import NewShoppingList from './views/NewShoppingList/NewShoppingList';
+
 
 function App() {
   return (
@@ -22,6 +25,8 @@ function App() {
 
       <Route path='/' element={<ProtectedRoute></ProtectedRoute>} >
         <Route path='/profile' element={<Profile></Profile>}></Route>
+        <Route path='/new-ticket' element={<NewTicket></NewTicket>}></Route>
+        <Route path='/create-your-shopping-list' element={<NewShoppingList></NewShoppingList>}></Route>
       </Route>
       
     </Routes>

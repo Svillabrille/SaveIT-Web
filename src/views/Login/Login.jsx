@@ -7,7 +7,6 @@ import * as yup from "yup";
 import { useLocation, useNavigate } from 'react-router-dom'
 import { login as loginRequest } from '../../services/AuthService';
 import { useAuthContext } from '../../contexts/AuthContext';
-
 import './Login.scss'
 
 const schema = yup.object({
@@ -19,7 +18,7 @@ const Login = () => {
     const navigate = useNavigate()
     let location = useLocation();
   
-    let from = location.state?.from?.pathname || "/home";
+    let from = location.state?.from?.pathname || "/";
     const { login } = useAuthContext()
   
     const [error, setError] = useState()
@@ -34,7 +33,6 @@ const Login = () => {
   
       loginRequest(data)
         .then(response => {
-          console.log(response);
   
           login(response.access_token, () => navigate(from, { replace: true }))
         })

@@ -1,0 +1,5 @@
+@import '../../variables.scss';
+
+.Home {
+    height: $viewport-SE - $footer-height - $nav-height;
+}

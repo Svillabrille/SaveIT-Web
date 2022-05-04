@@ -1,20 +1,28 @@
 import React from "react";
 import "./Footer.scss";
 import { Link } from "react-router-dom";
-
+import { useAuthContext } from "../../contexts/AuthContext";
 const Footer = () => {
+
+  const { user } = useAuthContext();
+
+
   return (
-    <div className="footer">
       <footer className="footer">
         <div className="l-footer">
-          <h1>
             <img src="https://i.postimg.cc/y62wcLBq/logo.png" alt="" />
-          </h1>
-          <div>
-            
-          </div>
+
+              {user?.image ? (
+                  <Link to="/profile">
+                    <img src={user.image} alt="" className="FooterImage" />
+                  </Link> 
+                ) : (
+                  <Link to="/profile">
+                    <img src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png" alt="" className="FooterImage" />
+                  </Link>
+                )}
         </div>
-        <ul className="r-footer">
+{/*         <ul className="r-footer">
           <li>
             <h2 className="FooterTitles">Social</h2>
             <div className="box_social">
@@ -66,12 +74,11 @@ const Footer = () => {
               </li>
             </ul>
           </li>
-        </ul>
+        </ul> */}
         <div className="b-footer">
           <p>All rights reserved by <span style={{color:'#52BF04'}}>©</span> SaveIT 2022 </p>
         </div>
       </footer>
-    </div>
   );
 };
 

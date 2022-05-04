@@ -1,0 +1,10 @@
+[
+    {
+        "id": "2",
+        "name": "Coca-Cola",
+        "supermarket": "Carrefour",
+        "price": "2",
+        "description": "prueba descripción",
+        "quantity": "2"
+    }
+]

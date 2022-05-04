@@ -4,7 +4,6 @@ import "./Profile.scss"
 
 const Profile = () => {
     const { user, getUser } = useAuthContext()
-    console.log(user);
     return (
         <div>
             <div className="card-container">
@@ -21,7 +20,7 @@ const Profile = () => {
                 <p className='ProfileParagraph'>User interface designer and <br/> front-end developer</p>
                 <div className="buttons">
                     <button className="primary">
-                        Message
+                        My tickets
                     </button>
                     <button className="primary ghost">
                         Following

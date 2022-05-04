@@ -32,6 +32,7 @@ const Navbar = () => {
             <li>
               <NavLink to="/about" onClick={() => setShowMediaIcons(false)}>About</NavLink>
             </li>
+          
           {!user ? 
             
                 (
@@ -47,12 +48,15 @@ const Navbar = () => {
                 ) : (
                     <>
                         <li>
+                            <NavLink to="/create-your-shopping-list" onClick={() => setShowMediaIcons(false)}>New Shopping List</NavLink>
+                        </li>
+                        <li>
                             <NavLink to="/profile" onClick={() => setShowMediaIcons(false)}>Profile</NavLink>
                         </li>
                         <li>
                             <p className="logout" onClick={logout}>Logout</p>
-                        {/* <NavLink to="/logout" onClick={() => setShowMediaIcons(false)}>Login</NavLink> */}
                         </li>
+                        
                     </>
                 )
 

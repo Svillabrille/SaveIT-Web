@@ -3,14 +3,13 @@
   .center_login{
     top: 50%;
     left: 50%;
-/*     transform: translate(-50%, -50%);
- */    width: 375;
+/*     transform: translate(-50%, -50%); */ 
+    width: 375;
     background: white;
     border-radius: 10px;
 /*     box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
- */    height: 350px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+ */ height: $viewport-SE - $footer-height - $nav-height;
+
   }
   .center_login h1{
     text-align: center;
@@ -88,8 +87,8 @@
     background: $primary-color;
     border-radius: 25px;
     font-size: 18px;
-    color: #e9f4fb;
-    font-weight: 700;
+    color: $white;
+    font-weight: 400;
     cursor: pointer;
     outline: none;
   }

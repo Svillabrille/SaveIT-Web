@@ -29,8 +29,11 @@
     }
     
     .l-footer {
-    margin-right: 1.25em;
-    margin-bottom: 2em;
+
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-radius: 50%;
     }
     
     h2 {
@@ -84,8 +87,8 @@
     
     .b-footer {
     text-align: center;
+    align-items: center;
     color: $footer-color;
-    padding-top: 50px;
     }
     
     .l-footer p {
@@ -96,7 +99,16 @@
         text-decoration: underline;
         text-underline-position: under;
     }
-    
+
+    .FooterImage {
+        height: 3rem;
+        border-radius: 50%;
+
+    }
+    footer {
+        height: 20vh;
+    }
+
     @media screen and (min-width: 600px) {
     .r-footer > * {
     flex: 1;
@@ -107,12 +119,20 @@
     }
     
     .l-footer {
-    flex: 1 0px;
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+
     }
     
     .r-footer {
     flex: 2 0px;
     }
+    }
+    .FooterImage {
+        height: 50px;
+        border-radius: 50%;
+
     }
     
 

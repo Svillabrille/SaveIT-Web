@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap");
+@import '../../variables.scss';
+
+.search
+{
+	border: 2px solid $primary-color;
+	overflow: auto;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.search input[type="text"]
+{
+	border: 0px;
+	width: 67%;
+	padding: 10px 10px;
+}
+
+.search input[type="text"]:focus
+{
+	outline: 0;
+}
+
+.search input[type="submit"]
+{
+	border: 0px;
+	background: none;
+	background-color: $primary-color ;
+	color: #fff;
+	float: right;
+	padding: 10px;
+	-moz-border-radius-top-right: 5px;
+	-webkit-border-radius-top-right: 5px;
+	-moz-border-radius-bottom-right: 5px;
+	-webkit-border-radius-bottom-right: 5px;
+        cursor:pointer;
+}
+
+/* ===========================
+   ====== Medua Query for Search Box ====== 
+   =========================== */
+
+@media only screen and (min-width : 150px) and (max-width : 780px)
+{
+	
+	.search
+	{
+		width: 95%;
+		margin: 0 auto;
+	}
+
+}
