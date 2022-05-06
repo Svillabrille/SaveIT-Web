@@ -1,2 +1,7 @@
 @import '../../variables.scss';
 
+.ShoppingList {
+    height: $viewport-SE - $footer-height - $nav-height;
+    overflow-y: auto;
+
+}

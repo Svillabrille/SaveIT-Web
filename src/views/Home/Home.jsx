@@ -14,14 +14,19 @@ const Home = () => {
 
         <div className='Home'>
 
-        <h1>Welcome to SaveIT the App that will help you find the best prices for your shopping list!</h1>
+        <h1 className='HomeText'>Welcome to SaveIT the App that will help you find the best prices for your shopping list!</h1>
 
         { !user ? 
-            <h1>Log in in order to see the products that you can find</h1>
+            <h1>Log in in order to upload your tickets here</h1>
         :
-        <div>
-            <h3>Add a new ticket to your profile and colaborate with the comunity!</h3>
-            <Link to={'/new-ticket'}>New Ticket</Link>
+
+        <div className='HomeTicket'>
+            <h3 className='HomeSecondaryText'>Add a new ticket to your profile and colaborate with the comunity!</h3>
+            <ul className = "links">
+                <Link to={'/new-ticket'}>
+                    <li>New Ticket</li>
+                </Link>  
+            </ul>
         </div>
         }
         </div>

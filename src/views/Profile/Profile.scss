@@ -98,3 +98,7 @@ button.primary.ghost {
     display: flex;
     justify-content: space-evenly;
 }
+
+.Profile {
+	height: $viewport-SE - $footer-height - $nav-height;
+}

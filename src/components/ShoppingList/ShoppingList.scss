@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap");
+@import '../../variables.scss';
+
+.ContentBox{
+    font-size: 15px;
+    border: solid 2px $primary-color;
+    border-radius: 5px;
+    margin: 10px;
+    
+}
+
+.subtitle{
+margin-top: 40px;
+}
+
+.has-text-left {
+    margin-top: 10px;
+}
+.fa-times {
+    padding-left: 20px;
+}

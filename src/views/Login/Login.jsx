@@ -36,8 +36,8 @@ const Login = () => {
   
           login(response.access_token, () => navigate(from, { replace: true }))
         })
-        .catch(err => {
-          setError(err?.response?.data?.message)
+        .catch(error => {
+          setError(error?.response?.data?.message)
         })
         .finally(() => setIsSubmitting(false))
     }
@@ -54,7 +54,8 @@ const Login = () => {
                     <span></span>
                     <input placeholder="Password" type="password" name="password" {...register('password')} />
                 </div>
-                <button className="Submit">Submit</button>
+                <div className="LoginError">{error}</div>
+                <button className="Submit">Login</button>
                 <div className="signup_link_login">
                     Not a member? <Link to="/register">Signup</Link>
                 </div>

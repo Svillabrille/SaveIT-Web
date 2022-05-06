@@ -38,23 +38,23 @@ const Navbar = () => {
                 (
                     <>
                         <li>
-                            <NavLink to="/register" onClick={() => setShowMediaIcons(false)}>Register</NavLink>
+                            <NavLink className='NavbarOption' to="/register" onClick={() => setShowMediaIcons(false)}>Register</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/login" onClick={() => setShowMediaIcons(false)}>Login</NavLink>
+                            <NavLink className='NavbarOption' to="/login" onClick={() => setShowMediaIcons(false)}>Login</NavLink>
                         </li>
                     </>
                     
                 ) : (
                     <>
                         <li>
-                            <NavLink to="/create-your-shopping-list" onClick={() => setShowMediaIcons(false)}>New Shopping List</NavLink>
+                            <NavLink className='NavbarOption' to="/create-your-shopping-list" onClick={() => setShowMediaIcons(false)}>New Shopping List</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/profile" onClick={() => setShowMediaIcons(false)}>Profile</NavLink>
+                            <NavLink className='NavbarOption' to="/profile" onClick={() => setShowMediaIcons(false)}>Profile</NavLink>
                         </li>
                         <li>
-                            <p className="logout" onClick={logout}>Logout</p>
+                            <p className="logout NavbarOption" onClick={logout}>Logout</p>
                         </li>
                         
                     </>
@@ -69,7 +69,7 @@ const Navbar = () => {
         <div className="social-media">
           {/* hamburget menu start  */}
           <div className="hamburger-menu">
-            <i className="fas fa-bars" onClick={() => setShowMediaIcons(!showMediaIcons)}></i>
+            <i className="fas fa-bars fa-lg" onClick={() => setShowMediaIcons(!showMediaIcons)}></i>
           </div>
         </div>
       </nav>

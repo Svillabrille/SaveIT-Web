@@ -15,7 +15,6 @@ section{
 }
 
 .content{
-    padding-top: 25px;
     background: $white;
     display: flex;
     flex-direction: column;
@@ -99,6 +98,9 @@ section{
 /*****************/
 
 @media(max-width: 992px){
+    .About {
+        height: $viewport-SE - $footer-height - $nav-height;
+    }
     section{
         grid-template-columns: 1fr;
         width: 100%;

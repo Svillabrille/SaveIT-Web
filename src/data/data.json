@@ -1,10 +1,194 @@
 [
     {
-        "id": "2",
-        "name": "Coca-Cola",
+        "id": "111",
+        "name": "Coca-cola",
         "supermarket": "Carrefour",
+        "price": "3.1",
+        "description": "prueba descripción",
+        "quantity":"0"
+    },
+    {
+        "id": "112",
+        "name": "Huevos",
+        "supermarket": "Carrefour",
+        "price": "1.8",
+        "description": "prueba descripción",
+        "quantity":"0"
+    },
+    {
+        "id": "113",
+        "name": "Patatas Lays",
+        "supermarket": "Carrefour",
+        "price": "1.89",
+        "description": "prueba descripción",
+        "quantity":"0"
+    },
+    {
+        "id": "114",
+        "name": "Vitroclen",
+        "supermarket": "Carrefour",
+        "price": "5.23",
+        "description": "prueba descripción",
+        "quantity":"0"
+    },
+    {
+        "id": "115",
+        "name": "Naranjas 2kg",
+        "supermarket": "Carrefour",
+        "price": "2.15",
+        "description": "prueba descripción",
+        "quantity":"0"
+    },
+    {
+        "id": "116",
+        "name": "Naranjas 5kg",
+        "supermarket": "Carrefour",
+        "price": "2.6",
+        "description": "prueba descripción",
+        "quantity":"0"
+    },
+    {
+        "id": "117",
+        "name": "Chopped Campofrío",
+        "supermarket": "Carrefour",
+        "price": "2.4",
+        "description": "prueba descripción",
+        "quantity":"0"
+    },
+    {
+        "id": "118",
+        "name": "Chocolate Milka",
+        "supermarket": "Carrefour",
+        "price": "3.76",
+        "description": "prueba descripción",
+        "quantity":"0"
+    },
+    {
+        "id": "219",
+        "name": "Coca-cola",
+        "supermarket": "Dia",
+        "price": "2.1",
+        "description": "prueba descripción",
+        "quantity":"0"
+    },
+    {
+        "id": "220",
+        "name": "Huevos",
+        "supermarket": "Dia",
+        "price": "1.4",
+        "description": "prueba descripción",
+        "quantity":"0"
+    },
+    {
+        "id": "221",
+        "name": "Patatas Lays",
+        "supermarket": "Dia",
+        "price": "0.89",
+        "description": "prueba descripción",
+        "quantity":"0"
+    },
+    {
+        "id": "222",
+        "name": "Vitroclen",
+        "supermarket": "Dia",
+        "price": "5",
+        "description": "prueba descripción",
+        "quantity":""
+    },
+    {
+        "id": "223",
+        "name": "Naranjas 2kg",
+        "supermarket": "Dia",
         "price": "2",
         "description": "prueba descripción",
-        "quantity": "2"
+        "quantity":"0"
+    },
+    {
+        "id": "224",
+        "name": "Naranjas 5kg",
+        "supermarket": "Dia",
+        "price": "2",
+        "description": "prueba descripción",
+        "quantity":"0"
+    },
+    {
+        "id": "225",
+        "name": "Chopped Campofrío",
+        "supermarket": "Dia",
+        "price": "2",
+        "description": "prueba descripción",
+        "quantity":"0"
+    },
+    {
+        "id": "226",
+        "name": "Chocolate Milka",
+        "supermarket": "Dia",
+        "price": "2",
+        "description": "prueba descripción",
+        "quantity":"0"
+    },
+    {
+        "id": "311",
+        "name": "Coca-cola",
+        "supermarket": "Mercadona",
+        "price": "2.3",
+        "description": "prueba descripción",
+        "quantity":"0"
+    },
+    {
+        "id": "312",
+        "name": "Huevos",
+        "supermarket": "Mercadona",
+        "price": "1.1",
+        "description": "prueba descripción",
+        "quantity":"0"
+    },
+    {
+        "id": "313",
+        "name": "Patatas Lays",
+        "supermarket": "Mercadona",
+        "price": "0.59",
+        "description": "prueba descripción",
+        "quantity":"0"
+    },
+    {
+        "id": "314",
+        "name": "Vitroclen",
+        "supermarket": "Mercadona",
+        "price": "4.24",
+        "description": "prueba descripción",
+        "quantity":"0"
+    },
+    {
+        "id": "315",
+        "name": "Naranjas 2kg",
+        "supermarket": "Mercadona",
+        "price": "1.9",
+        "description": "prueba descripción",
+        "quantity":"0"
+    },
+    {
+        "id": "316",
+        "name": "Naranjas 5kg",
+        "supermarket": "Mercadona",
+        "price": "2.3",
+        "description": "prueba descripción",
+        "quantity":"0"
+    },
+    {
+        "id": "317",
+        "name": "Chopped Campofrío",
+        "supermarket": "Mercadona",
+        "price": "2.6",
+        "description": "prueba descripción",
+        "quantity":"0"
+    },
+    {
+        "id": "318",
+        "name": "Chocolate Milka",
+        "supermarket": "Mercadona",
+        "price": "1.77",
+        "description": "prueba descripción",
+        "quantity":"0"
     }
 ]

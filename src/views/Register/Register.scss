@@ -9,8 +9,8 @@
     border-radius: 10px;
 /*     box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
  */    height: 100%;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    overflow-y: auto;
+    height: $viewport-SE - $footer-height - $nav-height;
   }
 
   .Titles {
@@ -109,4 +109,9 @@
   }
   .signup_link a:hover{
     text-decoration: underline;
+  }
+  .RegisterErrors {
+    color: $danger;
+    padding-top: 5px;
+    font-size: 9px;
   }

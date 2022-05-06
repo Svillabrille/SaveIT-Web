@@ -10,6 +10,7 @@ import NewTicket from './views/NewTicket/NewTicket';
 import Profile from './views/Profile/Profile';
 import ProtectedRoute from './guards/ProtectedRoute';
 import NewShoppingList from './views/NewShoppingList/NewShoppingList';
+import Payment from './views/Payment/Payment';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <Route path='/profile' element={<Profile></Profile>}></Route>
         <Route path='/new-ticket' element={<NewTicket></NewTicket>}></Route>
         <Route path='/create-your-shopping-list' element={<NewShoppingList></NewShoppingList>}></Route>
+        <Route path='/shopping-payment' element={<Payment></Payment>}></Route>
       </Route>
       
     </Routes>

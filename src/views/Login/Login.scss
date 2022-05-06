@@ -109,3 +109,9 @@
   .signup_link_login a:hover{
     text-decoration: underline;
   }
+
+  .LoginError {
+    color: $danger;
+    font-size: 15px;
+    padding-bottom: 20px;
+  }

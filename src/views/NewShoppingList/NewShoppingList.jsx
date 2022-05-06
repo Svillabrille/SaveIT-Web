@@ -33,7 +33,7 @@ const NewShoppingList = () => {
     }
 
     return (
-        <div>
+        <div className='ShoppingList'>
             <Searcher setSearch={setSearch}></Searcher>
              <div className="column">
                 { search && products?.map(product => {

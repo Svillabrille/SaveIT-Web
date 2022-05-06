@@ -1,0 +1,5 @@
+@import '../../variables.scss';
+
+.NewTicket {
+    height: $viewport-SE - $footer-height - $nav-height;
+}

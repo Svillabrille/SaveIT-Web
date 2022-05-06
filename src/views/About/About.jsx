@@ -3,13 +3,13 @@ import './About.scss'
 
 const About = () => {
     return (
-        <div>
+        <div className='About'>
         <section>
             <div className = "content">
                 <h2>About Us</h2>
                 <span></span>
 
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis aspernatur voluptas inventore ab voluptates nostrum minus illo laborum harum laudantium earum ut, temporibus fugiat sequi explicabo facilis unde quos corporis!</p>
+                <p>SaveIT is the app that will allow you, not only to save your tickets digitally in the same place, but also look for the best options for your daily shopping. by using SaveIT you will go to the cheapest supermarket everytime you have to!</p>
 
                 <ul className = "links">
                     <li><a href = "#">work</a></li>

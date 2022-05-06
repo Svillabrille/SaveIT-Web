@@ -46,21 +46,49 @@ const Register = () => {
             <form onSubmit={handleSubmit(onSubmit)}>
              <div className="txt_field">
                 <input placeholder='Name'name="name" {...register('name')} />
+                {errors.name && <small className='RegisterErrors'>{errors.name?.message}</small>}
             </div> 
                 <div className="txt_field">
                     <span></span>
-                    <input placeholder='Email' type="email" name="email" {...register('email')} />
-                    {errors.email && <small>{errors.email?.message}</small>}
+                    <input placeholder='Email' type="email" name="email" {...register('email')}/>
+                    {errors.email && <small className='RegisterErrors'>{errors.email?.message}</small>}
                 </div>
                 <div className="txt_field">
                     <span></span> 
                     <input placeholder='Password' type="password" name="password" {...register('password')} />
+                    {errors.password && <small className='RegisterErrors'>{errors.password?.message}</small>}
                 </div>
                 <div className="txt_field">
                     <span></span> 
                     <input placeholder='Country' type="text" name="country" {...register('country')} />
                 </div>
-                <button className="Submit">Submit</button>
+                <div className="txt_field">
+                  <select {...register('supermarketPreferences')} multiple>
+                      <option>
+                        Dia
+                      </option>
+                      <option>
+                        Mercadona
+                      </option>
+                      <option>
+                        Carrefour
+                      </option>
+                      <option>
+                        Lidl
+                      </option>
+                      <option>
+                        Supeco
+                      </option>
+                      <option>
+                        AhorraMas
+                      </option>
+                      <option>
+                        Hipercor
+                      </option>
+                    
+                  </select>
+                </div>
+                <button className="Submit">Register</button>
             </form>
         </div>
         
