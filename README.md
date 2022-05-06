@@ -6,4 +6,4 @@ SaveIt was born to grant customers easy access to product prices before going to
 
 You can upload your tickets and products by using your phone camera and scanning the qr code. This will also be a valid ticket if you want to give back any item purchased.
 
-(https://res.cloudinary.com/dchpgcdda/image/upload/v1651770785/SaveIT/Logo-SaveIT_hzdpur.svg)
+(https://github.com/Svillabrille/SaveIT-Web/blob/main/src/public/images/SAveIT%20Logo.png)
