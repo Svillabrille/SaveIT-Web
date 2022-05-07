@@ -11,6 +11,7 @@
 
 .subtitle{
 margin-top: 40px;
+color: $primary-color;
 }
 
 .has-text-left {
@@ -18,4 +19,15 @@ margin-top: 40px;
 }
 .fa-times {
     padding-left: 20px;
+}
+
+.ProToPayment {
+    border: none;
+    background-color: $secondary-color;
+    color: $white;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
 }

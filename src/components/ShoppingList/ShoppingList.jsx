@@ -18,7 +18,7 @@ const ShoppingList = ({deleteProduct, shoppingList}) => {
                 {shoppingList.map(product => {
                     return (
                     <li key={product.id} className="has-text-left">
-                        {product.quantity} {product.name} = {product.price * product.quantity.toFixed(2)} 
+                        {product.quantity} {product.name} = {product.price.toFixed(2) * product.quantity.toFixed(2)}
                         <i
                         className="fas fa-times has-text-danger is-clickable ml-3 fa-lg"
                         onClick={() => deleteProduct(product.id)}
@@ -34,10 +34,9 @@ const ShoppingList = ({deleteProduct, shoppingList}) => {
                 </div>
                 <div>
                     <Link to={{
-                        pathname:'/shopping-payment',
-                        calculateTotalPrice:{calculateTotalPrice}
+                        pathname:`/shopping-payment?${calculateTotalPrice}`,
                     }} >
-                        <p>Proceed to Payment</p>
+                        <button className='ProToPayment'>Pay using Glovo</button>
                     </Link>
                 </div>
             </div>

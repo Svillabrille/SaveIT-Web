@@ -178,6 +178,7 @@ color: $primary-color;
     justify-content: center;
     transition: all 2s linear;
     transform-origin: top;
+    //border: 2px solid $primary-color
 
   }
 
@@ -251,7 +252,6 @@ color: $primary-color;
   .main-nav {
     height: 10vh;
     grid-template-columns: 1rem 4fr 1fr 1fr 1rem;
-
   }
 
   .logo,
@@ -272,7 +272,7 @@ color: $primary-color;
 
   .social-media .hamburger-menu {
     display: block;
-    font-size: rem;
+    font-size: 3rem;
   }
 
   /* hero section  */
@@ -288,5 +288,8 @@ color: $primary-color;
       color: $danger;
   }
 
+  .NavbarOption {
+    font-size: 16px;
+  }
 
 }

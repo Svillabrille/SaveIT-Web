@@ -1,1 +1,6 @@
 @import '../../variables.scss';
+
+.Payment {
+    height: $viewport-SE - $footer-height - $nav-height;
+
+}

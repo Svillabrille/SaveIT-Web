@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import ProductBox from '../../components/ProductBox/ProductBox';
 import Searcher from '../../components/Searcher/Searcher';
 import ShoppingList from '../../components/ShoppingList/ShoppingList';
@@ -36,7 +36,7 @@ const NewShoppingList = () => {
         <div className='ShoppingList'>
             <Searcher setSearch={setSearch}></Searcher>
              <div className="column">
-                { search && products?.map(product => {
+                { search && products?.sort((a, b) => a.price - b.price).map(product => {
                         if (product?.name.toLowerCase().includes(search.toLowerCase())) {
                         return (
                             <div key={product.id}>

@@ -21,13 +21,11 @@ const ProductBox = ({id, name, addFood, price, quantity,supermarket}) => {
     return (
         <>
               <div className="card">
-                    <h1>{name}</h1>
-                    <h3>{supermarket}</h3>
+                    <h1 className='ProductName'>{name}</h1>
+                    <h3 className='Supermarket'>{supermarket}</h3>
                     <p className='ProductPrice'>Price: {price} USD</p>
                     <div className='ProductQty'>
-                        <button onClick={() => setQty(qty > 0 && qty - 1)}>
-                            <i className="fas fa-minus-circle"></i>
-                        </button>
+                            <i onClick={() => setQty(qty > 0 && qty - 1)} className="fas fa-minus-circle fa-4x"></i>
                         <input
                             onChange={(event) => setQty(event.target.value)}
                             className="input"
@@ -35,9 +33,7 @@ const ProductBox = ({id, name, addFood, price, quantity,supermarket}) => {
                             min="0"
                             value={qty}
                         />
-                        <button onClick={() => setQty(qty + 1) }>
-                            <i className="fas fa-plus-circle"></i>
-                        </button>
+                            <i onClick={() => setQty(Number(qty) + 1) } className="fas fa-plus-circle fa-4x"></i>
                         
                     </div>
                     <div>

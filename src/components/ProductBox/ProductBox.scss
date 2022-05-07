@@ -4,24 +4,47 @@
 
 
 .card {
-    padding-top: 10px;
-    overflow-y: auto;
+   padding-top: 10px;
+   overflow-y: auto;
+   border: solid 1px #152238;
+   margin: 10px;
+   padding: 25px;
+   border-radius: 5px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   margin: 20px 35px;
+}
+
+.ProductName {
+   font-size: 25px;
+}
+
+.Supermarket {
+   font-size: 19px;
+}
+
+.fa-plus-circle, .fa-minus-circle {
+   color: $primary-color;
 }
 
 .ProductPrice {
-   font-size: 10px;
+   font-size: 15px;
    padding-bottom: 5px;
 }
 
 .input {
-    width: 30px;
+    width: 130px;
+    text-align: center;
 }
+
 
 .ProductButton {
     margin-top: 10px;
-    background-color: $white;
-    padding: 2px;
-    border: solid 1px $primary-color;
+    margin-bottom: 5px;
+    background-color: $primary-color;
+    color: $white;
+    padding: 6px;
+    border: none;
     border-radius: 5px;
 }
 

@@ -2,4 +2,23 @@
 
 .NewTicket {
     height: $viewport-SE - $footer-height - $nav-height;
+    overflow-y: auto;
+}
+
+.Camera {
+    width: 300px;
+}
+
+.QrButton {
+    border: none;
+    background-color: $primary-color;
+    color: $white;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.video {
+    height: 400px;
+    width: 200px;
 }

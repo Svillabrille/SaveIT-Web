@@ -27,10 +27,10 @@ const Navbar = () => {
           <ul>
 
             <li>
-              <NavLink to="/" onClick={() => setShowMediaIcons(false)}>Home</NavLink>
+              <NavLink className='NavbarOption' to="/" onClick={() => setShowMediaIcons(false)}>Home</NavLink>
             </li>
             <li>
-              <NavLink to="/about" onClick={() => setShowMediaIcons(false)}>About</NavLink>
+              <NavLink className='NavbarOption' to="/about" onClick={() => setShowMediaIcons(false)}>About</NavLink>
             </li>
           
           {!user ? 
