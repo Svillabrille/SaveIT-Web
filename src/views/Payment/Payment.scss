@@ -2,5 +2,12 @@
 
 .Payment {
     height: $viewport-SE - $footer-height - $nav-height;
+    background-color: #FFC144;
+}
 
+.PaymentButton {
+    background-color: #048169;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
 }

@@ -36,7 +36,19 @@ const Profile = () => {
 
                         )
                     }
+                    {
+                        user?.supermarketPreferences.map( (preference, index) => 
+                            
+                            <li key={index}>{preference}</li>
+                        
+                        
+
+                        )
+                    }
                     </ul>
+                    {user?.tickets.map(ticket => 
+                        <h1 key={ticket._id}>{ticket.content}</h1>
+                    )}
                 </div>
             </div>
         </div>

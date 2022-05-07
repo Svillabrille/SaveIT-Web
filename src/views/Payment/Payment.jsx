@@ -23,13 +23,6 @@ const StripeForm = () => {
     navigate('/')
   }
 
-  console.log(calculateTotalPrice);
-
-  /* useEffect(() => {
-    getUserDetail(userId)
-      .then(user => setUser(user))
-  }, []) */
-
   const handleSubmit = async (event) => {
     event.preventDefault();
 
@@ -43,7 +36,6 @@ const StripeForm = () => {
     });
 
     if (error) {
-      console.log(error)
     } else if (paymentMethod) {
       const { id } = paymentMethod
       payment({ amount: Number(amount) * 100, subUserId: userId, paymentId: id })
@@ -59,14 +51,14 @@ const StripeForm = () => {
        <h5>Pay your shopping card {user?.email} </h5>
       </div>
       <CardElement/>
-      <button type="submit" disabled={!stripe || !elements}>
+      <h1>Amount that will be charged: {amount}</h1>
+      <button className='PaymentButton' type="submit" disabled={!stripe || !elements}>
         Pay
       </button>
     </form>
   );
 };
 
-console.log(process.env.REACT_APP_STRIPE_KEY)
 const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_KEY);
 
 const Payment = () => (
