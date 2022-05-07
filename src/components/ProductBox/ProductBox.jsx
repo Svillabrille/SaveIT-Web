@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import './ProductBox.scss'
 
 const ProductBox = ({id, name, addFood, price, quantity,supermarket}) => {

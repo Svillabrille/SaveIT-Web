@@ -6,7 +6,7 @@ import Login from './views/Login/Login';
 import Register from './views/Register/Register';
 import Home from './views/Home/Home';
 import About from './views/About/About';
-import NewTicket from './views/NewTicket/NewTicket';
+import NewTicket from './views/NewTicketShopping/NewTicketShopping';
 import Profile from './views/Profile/Profile';
 import ProtectedRoute from './guards/ProtectedRoute';
 import NewShoppingList from './views/NewShoppingList/NewShoppingList';
