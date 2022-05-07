@@ -17,7 +17,10 @@ const Home = () => {
         <h1 className='HomeText'>Welcome to SaveIT the App that will help you find the best prices for your shopping list!</h1>
 
         { !user ? 
-            <h1>Log in in order to upload your tickets here</h1>
+            <h1>
+                <Link className='HomeRedirect' to={'/login'}>Login </Link>
+                in order to upload your tickets here
+            </h1>
         :
 
         <div className='HomeTicket'>

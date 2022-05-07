@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import {loadStripe} from '@stripe/stripe-js';
 import {
   CardElement,
@@ -6,16 +6,22 @@ import {
   useStripe,
   useElements,
 } from '@stripe/react-stripe-js';
-import { payment, getUserDetail } from '../../services/UsersService';
-import { useParams, useNavigate } from 'react-router-dom';
+import { payment } from '../../services/UsersService';
+import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import './Payment.scss'
 
 const StripeForm = () => {
+  const { state: { amount } } = useLocation()
+
   const stripe = useStripe();
   const elements = useElements();
   const [user, setUser] = useState();
   const { userId,calculateTotalPrice } = useParams()
   const navigate = useNavigate()
+
+  if (!amount) {
+    navigate('/')
+  }
 
   console.log(calculateTotalPrice);
 
@@ -37,10 +43,10 @@ const StripeForm = () => {
     });
 
     if (error) {
-
+      console.log(error)
     } else if (paymentMethod) {
       const { id } = paymentMethod
-      payment({ amount: 100, subUserId: userId, paymentId: id })
+      payment({ amount: Number(amount) * 100, subUserId: userId, paymentId: id })
       .then(result => {
         navigate("/")
       })
@@ -59,6 +65,7 @@ const StripeForm = () => {
     </form>
   );
 };
+
 console.log(process.env.REACT_APP_STRIPE_KEY)
 const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_KEY);
 

@@ -15,7 +15,7 @@ const Profile = () => {
                 )}
 
                 <h3>{user?.name}</h3>
-                <h6>{user.country}</h6>
+                <h6>{user?.country}</h6>
                 <div className="buttons">
                     <button className="primary">
                         My Tickets

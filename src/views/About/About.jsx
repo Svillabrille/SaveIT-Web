@@ -12,15 +12,15 @@ const About = () => {
                 <p>SaveIT is the app that will allow you, not only to save your tickets digitally in the same place, but also look for the best options for your daily shopping. by using SaveIT you will go to the cheapest supermarket everytime you have to!</p>
 
                 <ul className = "links">
-                    <li><a href = "#">work</a></li>
+                    <li><a href = "/">Work</a></li>
 
                     <div className = "vertical-line"></div>
 
-                    <li><a href = "#">service</a></li>
+                    <li><a href = "/">Service</a></li>
 
                     <div className = "vertical-line"></div>
                     
-                    <li><a href = "#">contact</a></li>
+                    <li><a href = "/">contact</a></li>
                 </ul>
 
                 <ul className = "icons">

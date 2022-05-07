@@ -22,7 +22,7 @@ const ProductBox = ({id, name, addFood, price, quantity,supermarket}) => {
         <>
               <div className="card">
                     <h1 className='ProductName'>{name}</h1>
-                    <h3 className='Supermarket'>{supermarket}</h3>
+                    <img className='SupermarketImg' src={supermarket} alt="Supermarket" />
                     <p className='ProductPrice'>Price: {price} USD</p>
                     <div className='ProductQty'>
                             <i onClick={() => setQty(qty > 0 && qty - 1)} className="fas fa-minus-circle fa-4x"></i>

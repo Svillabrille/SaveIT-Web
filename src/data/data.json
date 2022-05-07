@@ -2,7 +2,7 @@
     {
         "id": "111",
         "name": "Coca-cola",
-        "supermarket": "Carrefour",
+        "supermarket": "https://1000marcas.net/wp-content/uploads/2021/09/Mercadona-Logo.png",
         "price": "3.1",
         "description": "prueba descripción",
         "quantity":"0"
@@ -10,7 +10,7 @@
     {
         "id": "112",
         "name": "Huevos",
-        "supermarket": "Carrefour",
+        "supermarket": "https://1000marcas.net/wp-content/uploads/2021/09/Mercadona-Logo.png",
         "price": "1.8",
         "description": "prueba descripción",
         "quantity":"0"
@@ -18,7 +18,7 @@
     {
         "id": "113",
         "name": "Patatas Lays",
-        "supermarket": "Carrefour",
+        "supermarket": "https://1000marcas.net/wp-content/uploads/2021/09/Mercadona-Logo.png",
         "price": "1.89",
         "description": "prueba descripción",
         "quantity":"0"
@@ -26,7 +26,7 @@
     {
         "id": "114",
         "name": "Vitroclen",
-        "supermarket": "Carrefour",
+        "supermarket": "https://1000marcas.net/wp-content/uploads/2021/09/Mercadona-Logo.png",
         "price": "5.23",
         "description": "prueba descripción",
         "quantity":"0"
@@ -34,7 +34,7 @@
     {
         "id": "115",
         "name": "Naranjas 2kg",
-        "supermarket": "Carrefour",
+        "supermarket": "https://1000marcas.net/wp-content/uploads/2021/09/Mercadona-Logo.png",
         "price": "2.15",
         "description": "prueba descripción",
         "quantity":"0"
@@ -42,7 +42,7 @@
     {
         "id": "116",
         "name": "Naranjas 5kg",
-        "supermarket": "Carrefour",
+        "supermarket": "https://1000marcas.net/wp-content/uploads/2021/09/Mercadona-Logo.png",
         "price": "2.6",
         "description": "prueba descripción",
         "quantity":"0"
@@ -50,7 +50,7 @@
     {
         "id": "117",
         "name": "Chopped Campofrío",
-        "supermarket": "Carrefour",
+        "supermarket": "https://1000marcas.net/wp-content/uploads/2021/09/Mercadona-Logo.png",
         "price": "2.4",
         "description": "prueba descripción",
         "quantity":"0"
@@ -58,7 +58,7 @@
     {
         "id": "118",
         "name": "Chocolate Milka",
-        "supermarket": "Carrefour",
+        "supermarket": "https://1000marcas.net/wp-content/uploads/2021/09/Mercadona-Logo.png",
         "price": "3.76",
         "description": "prueba descripción",
         "quantity":"0"
@@ -66,7 +66,7 @@
     {
         "id": "219",
         "name": "Coca-cola",
-        "supermarket": "Dia",
+        "supermarket": "https://logos-marcas.com/wp-content/uploads/2020/11/Carrefour-Logotipo-1972-1982.jpg",
         "price": "2.1",
         "description": "prueba descripción",
         "quantity":"0"
@@ -74,7 +74,7 @@
     {
         "id": "220",
         "name": "Huevos",
-        "supermarket": "Dia",
+        "supermarket": "https://logos-marcas.com/wp-content/uploads/2020/11/Carrefour-Logotipo-1972-1982.jpg",
         "price": "1.4",
         "description": "prueba descripción",
         "quantity":"0"
@@ -82,7 +82,7 @@
     {
         "id": "221",
         "name": "Patatas Lays",
-        "supermarket": "Dia",
+        "supermarket": "https://logos-marcas.com/wp-content/uploads/2020/11/Carrefour-Logotipo-1972-1982.jpg",
         "price": "0.89",
         "description": "prueba descripción",
         "quantity":"0"
@@ -90,7 +90,7 @@
     {
         "id": "222",
         "name": "Vitroclen",
-        "supermarket": "Dia",
+        "supermarket": "https://logos-marcas.com/wp-content/uploads/2020/11/Carrefour-Logotipo-1972-1982.jpg",
         "price": "5",
         "description": "prueba descripción",
         "quantity":""
@@ -98,7 +98,7 @@
     {
         "id": "223",
         "name": "Naranjas 2kg",
-        "supermarket": "Dia",
+        "supermarket": "https://logos-marcas.com/wp-content/uploads/2020/11/Carrefour-Logotipo-1972-1982.jpg",
         "price": "2",
         "description": "prueba descripción",
         "quantity":"0"
@@ -106,7 +106,7 @@
     {
         "id": "224",
         "name": "Naranjas 5kg",
-        "supermarket": "Dia",
+        "supermarket": "https://logos-marcas.com/wp-content/uploads/2020/11/Carrefour-Logotipo-1972-1982.jpg",
         "price": "2",
         "description": "prueba descripción",
         "quantity":"0"
@@ -114,7 +114,7 @@
     {
         "id": "225",
         "name": "Chopped Campofrío",
-        "supermarket": "Dia",
+        "supermarket": "https://logos-marcas.com/wp-content/uploads/2020/11/Carrefour-Logotipo-1972-1982.jpg",
         "price": "2",
         "description": "prueba descripción",
         "quantity":"0"
@@ -122,7 +122,7 @@
     {
         "id": "226",
         "name": "Chocolate Milka",
-        "supermarket": "Dia",
+        "supermarket": "https://logos-marcas.com/wp-content/uploads/2020/11/Carrefour-Logotipo-1972-1982.jpg",
         "price": "2",
         "description": "prueba descripción",
         "quantity":"0"
@@ -130,7 +130,7 @@
     {
         "id": "311",
         "name": "Coca-cola",
-        "supermarket": "Mercadona",
+        "supermarket": "https://1000marcas.net/wp-content/uploads/2021/06/Dia-Logo.jpg",
         "price": "2.3",
         "description": "prueba descripción",
         "quantity":"0"
@@ -138,7 +138,7 @@
     {
         "id": "312",
         "name": "Huevos",
-        "supermarket": "Mercadona",
+        "supermarket": "https://1000marcas.net/wp-content/uploads/2021/06/Dia-Logo.jpg",
         "price": "1.1",
         "description": "prueba descripción",
         "quantity":"0"
@@ -146,7 +146,7 @@
     {
         "id": "313",
         "name": "Patatas Lays",
-        "supermarket": "Mercadona",
+        "supermarket": "https://1000marcas.net/wp-content/uploads/2021/06/Dia-Logo.jpg",
         "price": "0.59",
         "description": "prueba descripción",
         "quantity":"0"
@@ -154,7 +154,7 @@
     {
         "id": "314",
         "name": "Vitroclen",
-        "supermarket": "Mercadona",
+        "supermarket": "https://1000marcas.net/wp-content/uploads/2021/06/Dia-Logo.jpg",
         "price": "4.24",
         "description": "prueba descripción",
         "quantity":"0"
@@ -162,7 +162,7 @@
     {
         "id": "315",
         "name": "Naranjas 2kg",
-        "supermarket": "Mercadona",
+        "supermarket": "https://1000marcas.net/wp-content/uploads/2021/06/Dia-Logo.jpg",
         "price": "1.9",
         "description": "prueba descripción",
         "quantity":"0"
@@ -170,7 +170,7 @@
     {
         "id": "316",
         "name": "Naranjas 5kg",
-        "supermarket": "Mercadona",
+        "supermarket": "https://1000marcas.net/wp-content/uploads/2021/06/Dia-Logo.jpg",
         "price": "2.3",
         "description": "prueba descripción",
         "quantity":"0"
@@ -178,7 +178,7 @@
     {
         "id": "317",
         "name": "Chopped Campofrío",
-        "supermarket": "Mercadona",
+        "supermarket": "https://1000marcas.net/wp-content/uploads/2021/06/Dia-Logo.jpg",
         "price": "2.6",
         "description": "prueba descripción",
         "quantity":"0"
@@ -186,7 +186,7 @@
     {
         "id": "318",
         "name": "Chocolate Milka",
-        "supermarket": "Mercadona",
+        "supermarket": "https://1000marcas.net/wp-content/uploads/2021/06/Dia-Logo.jpg",
         "price": "1.77",
         "description": "prueba descripción",
         "quantity":"0"

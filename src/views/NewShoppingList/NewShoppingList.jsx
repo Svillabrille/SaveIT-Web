@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import ProductBox from '../../components/ProductBox/ProductBox';
 import Searcher from '../../components/Searcher/Searcher';
 import ShoppingList from '../../components/ShoppingList/ShoppingList';

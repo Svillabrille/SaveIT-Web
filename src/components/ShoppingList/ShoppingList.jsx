@@ -35,7 +35,7 @@ const ShoppingList = ({deleteProduct, shoppingList}) => {
                 <div>
                     <Link to={{
                         pathname:`/shopping-payment?${calculateTotalPrice}`,
-                    }} >
+                    }} state={{ amount: calculateTotalPrice().toFixed(2) }} >
                         <button className='ProToPayment'>Pay using Glovo</button>
                     </Link>
                 </div>
