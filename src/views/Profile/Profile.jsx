@@ -14,18 +14,18 @@ const Profile = () => {
                     <img src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png" alt="" className="round" />
                 )}
 
-                <h3>{user?.name}</h3>
-                <h6>{user?.country}</h6>
-                <div className="buttons">
+                <h3 className='UserName'>{user?.name}</h3>
+                <h6 className='UserH6'>{user?.country}</h6>
+{/*                 <div className="buttons">
                     <button className="primary">
                         My Tickets
                     </button>
                     <button className="primary ghost">
                         My Lists
                     </button>
-                </div>
+                </div> */}
                 <div className="skills">
-                    <h6>Liked Supermarkets</h6>
+                    <h6 className='UserH6'>Liked Supermarkets</h6>
                     <ul>
                     {
                         user?.supermarketPreferences.map( (preference, index) => 
@@ -46,8 +46,10 @@ const Profile = () => {
                         )
                     }
                     </ul>
+                    <h6 className='UserH6'>My tickets</h6>
+
                     {user?.tickets.map(ticket => 
-                        <h1 key={ticket._id}>{ticket.content}</h1>
+                        <h1 className='Usertickets' key={ticket._id}>{ticket.content}</h1>
                     )}
                 </div>
             </div>

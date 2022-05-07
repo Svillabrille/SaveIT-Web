@@ -101,4 +101,24 @@ button.primary.ghost {
 
 .Profile {
 	height: $viewport-SE - $footer-height - $nav-height;
+	overflow-y: auto;
+}
+
+.Usertickets {
+	margin-bottom: 20px;
+	margin-right: 40px ;
+	margin-left: 40px;
+	background: radial-gradient(ellipse at top, $white, transparent),
+	radial-gradient(ellipse at bottom, $primary-color, transparent);
+}
+
+.UserName {
+	color: $primary-color;
+	font-size: 18px;
+}
+
+.UserH6 {
+	color: $primary-color;
+	font-size: 14px;
+	margin-top: 20px;
 }

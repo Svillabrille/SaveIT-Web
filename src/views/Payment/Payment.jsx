@@ -9,15 +9,18 @@ import {
 import { payment } from '../../services/UsersService';
 import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import './Payment.scss'
+import { useAuthContext } from "../../contexts/AuthContext";
+
 
 const StripeForm = () => {
   const { state: { amount } } = useLocation()
+  const { user } = useAuthContext();
 
   const stripe = useStripe();
   const elements = useElements();
-  const [user, setUser] = useState();
   const { userId,calculateTotalPrice } = useParams()
   const navigate = useNavigate()
+  
 
   if (!amount) {
     navigate('/')
@@ -46,16 +49,19 @@ const StripeForm = () => {
   };
 
   return (
-    <form className='Payment' onSubmit={handleSubmit}>
-      <div className="my-4">
-       <h5>Pay your shopping card {user?.email} </h5>
-      </div>
-      <CardElement/>
-      <h1>Amount that will be charged: {amount}</h1>
-      <button className='PaymentButton' type="submit" disabled={!stripe || !elements}>
-        Pay
-      </button>
-    </form>
+    <>
+      <form className='Payment' onSubmit={handleSubmit}>
+        <div className="my-4">
+        <h5 className='PaymentTitle'> Time to checkOut {user?.name}! </h5>
+        </div>
+        <CardElement className='CardElement'/>
+        <h1 className='AmountToPay'>Amount that will be charged: {amount} USD</h1>
+        <button className='PaymentButton' type="submit" disabled={!stripe || !elements}>
+          Pay
+        </button>        
+      </form>
+
+    </>
   );
 };
 

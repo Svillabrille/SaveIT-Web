@@ -2,12 +2,36 @@
 
 .Payment {
     height: $viewport-SE - $footer-height - $nav-height;
-    background-color: #FFC144;
+    padding-top: 50px;
 }
 
 .PaymentButton {
     background-color: #048169;
+    color: $white;
     border: none;
     padding: 10px 20px;
     border-radius: 10px;
 }
+
+.CardElement {
+    border: solid 2px $primary-color;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #FFC144;
+
+}
+
+.AmountToPay {
+    color: $primary-color;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.PaymentTitle {
+    color: $primary-color;
+    font-size: 18px;
+}
+
