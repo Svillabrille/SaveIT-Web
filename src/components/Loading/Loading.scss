@@ -1,3 +1,10 @@
+@import '../../variables.scss';
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap");
+
+.Home {
+    font-family: 'Jost';
+}
+
 @keyframes spinner {
     0% {
       transform: rotate(0deg);
@@ -9,15 +16,15 @@
   .loading-spinner {
     width: 50px;
     height: 50px;
-    border: 10px solid #f3f3f3; /* Light grey */
-    border-top: 10px solid $primary-color; /* Blue */
+    border: 2px solid #f3f3f3; /* Light grey */
+    border-top: 2px solid $primary-color; /* Blue */
     border-radius: 50%;
     animation: spinner 1.5s linear infinite;
   }
   
   .spinner-container {
+    height: $viewport-SE - $footer-height - $nav-height;
     display: grid;
     justify-content: center;
     align-items: center;
-    height: 350px;
   }
