@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import {loadStripe} from '@stripe/stripe-js';
 import {
   CardElement,
@@ -17,7 +18,7 @@ const StripeForm = () => {
 
   const stripe = useStripe();
   const elements = useElements();
-  const { userId } = useParams()
+  const { userId,calculateTotalPrice } = useParams()
   const navigate = useNavigate()
   
 
@@ -57,7 +58,8 @@ const StripeForm = () => {
         <h1 className='AmountToPay'>Amount that will be charged: {amount} USD</h1>
         <button className='PaymentButton' type="submit" disabled={!stripe || !elements}>
           Pay
-        </button>        
+        </button>
+        
       </form>
 
     </>
