@@ -3,7 +3,7 @@ import { useAuthContext } from '../../contexts/AuthContext';
 import "./Profile.scss"
 
 const Profile = () => {
-    const { user, getUser } = useAuthContext()
+    const { user } = useAuthContext()
     return (
         <div className='Profile'>
             <div className="card-container">

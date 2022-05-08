@@ -24,7 +24,7 @@ const Login = () => {
   
     const [error, setError] = useState()
     const [isSubmitting, setIsSubmitting] = useState(false)
-    const { register, handleSubmit, formState:{ errors } } = useForm({
+    const { register, handleSubmit } = useForm({
       resolver: yupResolver(schema)
     });
 

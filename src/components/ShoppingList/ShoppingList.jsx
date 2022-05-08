@@ -20,7 +20,7 @@ const ShoppingList = ({deleteProduct, shoppingList}) => {
                     <li key={product.id} className="has-text-left">
                         {product.quantity} {product.name} = {product.price.toFixed(2) * product.quantity.toFixed(2)}
                         <i
-                        className="fas fa-times has-text-danger is-clickable ml-3 fa-lg"
+                        className="fas fa-times has-text-danger is-clickable fa-lg"
                         onClick={() => deleteProduct(product.id)}
                         ></i>
                     </li>

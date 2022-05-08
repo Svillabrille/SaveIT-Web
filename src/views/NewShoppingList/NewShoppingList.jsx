@@ -12,7 +12,6 @@ import data from '../../data/data.json'
 const NewShoppingList = () => {
 
     const [products, setProducts] = useState(data)
-    const [showForm, setShowForm] = useState(false)
     const [search, setSearch] = useState("")
     const [shoppingList, setShoppingList] = useState([])
   

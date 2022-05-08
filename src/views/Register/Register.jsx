@@ -24,8 +24,6 @@ const Register = () => {
       resolver: yupResolver(schema)
     });
 
-
-    console.log(errors);
   
     const onSubmit = data => {
       setBackErrors({})

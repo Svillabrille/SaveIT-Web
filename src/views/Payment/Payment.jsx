@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import {loadStripe} from '@stripe/stripe-js';
 import {
   CardElement,
@@ -18,7 +17,7 @@ const StripeForm = () => {
 
   const stripe = useStripe();
   const elements = useElements();
-  const { userId,calculateTotalPrice } = useParams()
+  const { userId } = useParams()
   const navigate = useNavigate()
   
 
