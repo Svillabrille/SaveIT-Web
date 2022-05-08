@@ -4,6 +4,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
+import Loading from "../../components/Loading/Loading";
 import { register as registerRequest } from '../../services/AuthService'
 
 
@@ -23,6 +24,7 @@ const Register = () => {
       resolver: yupResolver(schema)
     });
 
+
     console.log(errors);
   
     const onSubmit = data => {
@@ -41,7 +43,9 @@ const Register = () => {
         })
     };    
     return (
-        <div className="center">
+      <>
+        { isSubmitting ? (<Loading></Loading>) :
+          <div className="center">
             <h1 className="Titles">Register</h1>
             <form onSubmit={handleSubmit(onSubmit)}>
              <div className="txt_field">
@@ -91,6 +95,9 @@ const Register = () => {
                 <button className="Submit">Register</button>
             </form>
         </div>
+        }
+      </>
+        
         
     );
 };
